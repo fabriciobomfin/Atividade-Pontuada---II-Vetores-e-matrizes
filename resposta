@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    char disciplina1[50], disciplina2[50], disciplina3[50];
+    float nota1[3], nota2[3], nota3[3];
+    float media1, media2, media3;
+
+    // Recebendo o nome das disciplinas
+    printf("Nome da disciplina 1: ");
+    scanf("%s", disciplina1);
+    printf("Nome da disciplina 2: ");
+    scanf("%s", disciplina2);
+    printf("Nome da disciplina 3: ");
+    scanf("%s", disciplina3);
+
+    // Recebendo e calculando a média da primeira disciplina
+    printf("Notas da disciplina %s (insira 3 notas entre 0 e 10):\n", disciplina1);
+    scanf("%f %f %f", &nota1[0], &nota1[1], &nota1[2]);
+    media1 = (nota1[0] + nota1[1] + nota1[2]) / 3;
+
+    // Recebendo e calculando a média da segunda disciplina
+    printf("Notas da disciplina %s (insira 3 notas entre 0 e 10):\n", disciplina2);
+    scanf("%f %f %f", &nota2[0], &nota2[1], &nota2[2]);
+    media2 = (nota2[0] + nota2[1] + nota2[2]) / 3;
+
+    // Recebendo e calculando a média da terceira disciplina
+    printf("Notas da disciplina %s (insira 3 notas entre 0 e 10):\n", disciplina3);
+    scanf("%f %f %f", &nota3[0], &nota3[1], &nota3[2]);
+    media3 = (nota3[0] + nota3[1] + nota3[2]) / 3;
+
+    // Exibindo as médias ponderadas de cada disciplina
+    printf("Média da disciplina %s: %.2f\n", disciplina1, media1);
+    printf("Média da disciplina %s: %.2f\n", disciplina2, media2);
+    printf("Média da disciplina %s: %.2f\n", disciplina3, media3);
+
+    return 0;
+}
